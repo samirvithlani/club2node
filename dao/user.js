@@ -40,7 +40,7 @@ function selectuser() {
 function deleteuser(name) {
 
 
-    var sql = "delete from user where username = '"+name+"'"
+    var sql = "delete from user where username = '" + name + "'"
 
     dbConn.query(sql, (err, sucess) => {
 
@@ -51,7 +51,7 @@ function deleteuser(name) {
         }
         else {
 
-            console.log("error..",err)
+            console.log("error..", err)
         }
     })
 
